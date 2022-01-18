@@ -6,7 +6,7 @@
 
 header{
     width: 800px;
-    height: 60px;
+    height: 90px;
     margin: auto;
     background-color: #E579E5;
     margin-top: 1em;
@@ -19,12 +19,12 @@ main{
 }
 
 .upper-container{
-    height: 400px;
+    height: 350px;
     background-color: #e1d67a;
 }
 
 .lower-container{
-    height: 400px;
+    height: 500px;
     background-color: #0488fb;
     margin-top: 1em;
 }
@@ -35,12 +35,41 @@ main{
     background-color: #abcfe7;
 }
 
+.lower-container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
 
+#column-contenitor{
+    margin-top: 1em;
+}
+
+.column{
+    float: left;
+}
+
+.sidebar,
+.central{
+    background-color: #abcfe7;
+    height: 410px;
+    
+}
+
+.sidebar{
+    width:calc(25% - 1em);
+}
+
+.central{
+    /* background-color: coral; */
+    width: 50%;
+    margin: 0 1em;
+}
 
 
 footer{
     width: 800px;
-    height: 60px;
+    height: 50px;
     margin: auto;
     background-color: #8601fd;
     margin-top: 1em;
